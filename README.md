@@ -15,7 +15,6 @@ Installation
 Download Kafka and edit below two properties
 
 server.properties ----------> log.dirs=C:\kafka_2.13-2.4.0\kafka-logs
-
 zookeeper.properties ----------> dataDir=C:\kafka_2.13-2.4.0\data
 
 Download Python and install kafka
@@ -26,7 +25,7 @@ Download Spark and download JAR: spark-streaming-kafka-0-8-assembly_2.11-2.3.0.j
 
 Include the Jar in C:\spark-2.4.4-bin-hadoop2.7\jars\
 
-
+==========================================================================================
 Steps
 Start Services
 cd kafka_2.13-2.4.0\
@@ -34,10 +33,12 @@ cd kafka_2.13-2.4.0\
 
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
+------------------------------------------------------------------------------------------
 Submit Spark Streaming Job
 cd users\srava\downloads
 spark-submit --master local[*] --deploy-mode client --jars C:\spark-2.4.4-bin-hadoop2.7\jars\spark-streaming-kafka-0-8-assembly_2.11-2.3.0.jar Streaming.py
 
+-----------------------------------------------------------------------------------------
 Run Producer.py file
 cd  users\srava\downloads
 python Producer.py -i apache-access-log.txt
