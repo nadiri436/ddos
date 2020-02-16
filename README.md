@@ -25,7 +25,7 @@ Download Spark and download JAR: spark-streaming-kafka-0-8-assembly_2.11-2.3.0.j
 
 Include the Jar in C:\spark-2.4.4-bin-hadoop2.7\jars\
 
-=====================================================================================
+===============================================================================
 
 Start Services
 cd kafka_2.13-2.4.0\
